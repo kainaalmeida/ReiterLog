@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reiter_log/pages/cadastro.page.dart';
 import 'package:reiter_log/pages/oferta.page.dart';
 
 class HomePage extends StatefulWidget {
@@ -65,7 +66,10 @@ class _HomePageState extends State<HomePage> {
                 Icons.arrow_right,
                 size: 40,
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => CadastroPage()));
+              },
             ),
           ],
         ),
