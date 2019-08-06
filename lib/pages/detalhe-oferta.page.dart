@@ -29,7 +29,7 @@ class _DetalheOfertaPageState extends State<DetalheOfertaPage> {
             Container(
               height: 200,
               child: GoogleMap(
-                mapType: MapType.hybrid,
+                mapType: MapType.terrain,
                 initialCameraPosition: _kGooglePlex,
               ),
             ),
