@@ -70,6 +70,38 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset("assets/logo.png"),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5),
+                ),
+                border: Border.all(
+                  color: Colors.redAccent,
+                  width: 1.5,
+                ),
+              ),
+              child: FlatButton(
+                child: Text(
+                  "Confira nossas ofertas",
+                  style: TextStyle(color: Colors.red),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => OfertaPage()));
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
